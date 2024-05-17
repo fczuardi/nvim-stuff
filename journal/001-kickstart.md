@@ -22,6 +22,9 @@ of different shortcuts (that are suppose to make more sense) and the
 idea of visual mode first, so you dont have to guess beforehand
 if you are applying the command to the expected part of the text.
 
+I also like how Helix handles the global clipboard, having to type "+y
+to be able to paste elsewhere is something I dont like in vim.
+
 Well, I still want to see Helix succed, but at the same time I feel
 that "unlearning" some vim keybindings might be a hard task.
 
