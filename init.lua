@@ -1,6 +1,8 @@
+-- I am now using a symbolic link on ~/.config/nvim-fcz to this repo that has a lua subdir
+-- and the NVIM_APPNAME=nvim-fcz env var so I dont need this hack anymore.
 -- HACK: append my github project's modules to package.path so I can require them
-local modules_path = "/home/fcz/github/nvim-stuff/lua"
-package.path = string.format("%s/?.lua;%s/?/init.lua;%s", modules_path, modules_path, package.path)
+-- local modules_path = "/home/fcz/github/nvim-stuff/dev/lua"
+-- package.path = string.format("%s/?.lua;%s/?/init.lua;%s", modules_path, modules_path, package.path)
 
 -- make a dump(o) function available, useful for printing tables
 --require('fcz.debug')
