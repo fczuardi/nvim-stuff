@@ -1,4 +1,4 @@
 export PATH="$PATH:/opt/nvim-linux64/bin"
-alias neovim="nvim -u ~/github/nvim-stuff/top-down/init.lua"
-alias nv="nvim -u ~/github/nvim-stuff/bottom-up/init.lua"
-alias vim="nvim -u ~/github/nvim-stuff/bottom-up/init.vim"
+alias vim="nvim -u ~/github/nvim-stuff/main/existing-vim/init.vim"
+alias nv="NVIM_APPNAME=nvim-fcz nvim"
+alias neovim="NVIM_APPNAME=nvim-kickstart nvim"
