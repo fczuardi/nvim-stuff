@@ -39,9 +39,8 @@ require('fcz.keymaps')
 --[[
 User Interface:
   - nerd font
-  - TODO: statusline?
 ]]
-require('fcz.ui')
+require('fcz.ui').base()
 
 --[[
 Plugin manager (Lazy):
@@ -61,6 +60,12 @@ Colorschemes:
  - tokyonight-night
 ]]
 local themes = require('fcz.themes')
+--[[
+UI plugins:
+  - statusline
+]]
+local ui_plugins = require('fcz.ui').plugins
+table.insert(plugins, 1, ui_plugins)
 
 --[[
 Code plugins:
