@@ -26,7 +26,7 @@ Personal coding preferences:
  - tabstop 2
  - display line numbers
 ]]
-require('fcz.coding_preferences')
+require('fcz.code').base()
 
 --[[
 Personal keymaps:
@@ -63,7 +63,7 @@ local themes = require('fcz.themes')
 table.insert(plugins, 1, themes)
 
 --[[
-UI plugins:
+User Interface plugins:
   - statusline
 ]]
 local ui_plugins = require('fcz.ui').plugins
@@ -74,13 +74,13 @@ Code plugins:
   - gitsigns
     - ]c,[c = next,prev hunk
 ]]
-local code_plugins = require('fcz.code_plugins')
-table.insert(plugins, 1, code_plugins.plugins)
+local code_plugins = require('fcz.code').plugins
+table.insert(plugins, 1, code_plugins)
 
 --[[
 Plugins setup
 ]]
 plugin_manager.setup(plugins)
-code_plugins.init()
+require('fcz.code').plugins_setup()
 
 vim.cmd.colorscheme 'nordfox' -- default colorscheme
