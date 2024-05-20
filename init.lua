@@ -72,7 +72,8 @@ local code_plugins = require('fcz.code_plugins')
 --[[
 Plugins setup
 ]]
+table.insert(plugins, 1, code_plugins.plugins)
 table.insert(plugins, 1, themes)
-table.insert(plugins, 1, code_plugins)
 plugin_manager.setup(plugins)
-vim.cmd.colorscheme 'nord' -- default colorscheme
+code_plugins.init()
+vim.cmd.colorscheme 'nordfox' -- default colorscheme

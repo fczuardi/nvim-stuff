@@ -1,7 +1,11 @@
 {
-  "colorscheme: nord": { "branch": "main", "commit": "f13f5dfbb784deddbc1d8195f34dfd9ec73e2295" },
+  "colorscheme: nightfox": { "branch": "main", "commit": "df75a6a94910ae47854341d6b5a6fd483192c0eb" },
   "colorscheme: rose-pine": { "branch": "main", "commit": "b6fe88c3282cf9f117a3e836d761c2d78d02f417" },
-  "colorscheme: tokyonight": { "branch": "main", "commit": "634015fff1457ed66cf5364213a2bbbc51a82d6c" },
+  "colorscheme: tokyonight": { "branch": "main", "commit": "7fc18e82575f5b482b758b6dddfe97b606819a20" },
+  "colorscheme:catppuccin": { "branch": "main", "commit": "d97387aea8264f484bb5d5e74f2182a06c83e0d8" },
   "gitsigns.nvim": { "branch": "main", "commit": "805610a9393fa231f2c2b49cb521bfa413fadb3d" },
-  "lazy.nvim": { "branch": "main", "commit": "5d29ffeaa0f2d91f1dfbc21943d19a11e59a6fc6" }
+  "harpoon": { "branch": "harpoon2", "commit": "0378a6c428a0bed6a2781d459d7943843f374bce" },
+  "lazy.nvim": { "branch": "main", "commit": "0de782a6b0ffba599dbd332a4019d852564bf28c" },
+  "nvim-treesitter": { "branch": "master", "commit": "d184407e33084f4a57302bc1adf991997ccdd1da" },
+  "plenary.nvim": { "branch": "master", "commit": "b5c8de02a44ffeabff678090edd6a132ff8ab77d" }
 }
