@@ -23,3 +23,14 @@ vim.opt.undofile = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- Unused providers
+vim.api.nvim_set_var('loaded_perl_provider', 0)
+vim.api.nvim_set_var('loaded_ruby_provider', 0)
+
+-- identify *.Containerfile as Dockerfiles
+vim.filetype.add({
+  extension = {
+    Containerfile = 'dockerfile',
+  }
+})
