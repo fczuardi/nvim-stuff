@@ -34,7 +34,7 @@ Personal keymaps:
  - <leader>wq to save current file and quit
  - Esc in normal mode to clear highlight search
 ]]
-require('fcz.keymaps')
+require('fcz.keymaps').base()
 
 --[[
 User Interface:
@@ -60,6 +60,8 @@ Colorschemes:
  - tokyonight-night
 ]]
 local themes = require('fcz.themes')
+table.insert(plugins, 1, themes)
+
 --[[
 UI plugins:
   - statusline
@@ -73,12 +75,12 @@ Code plugins:
     - ]c,[c = next,prev hunk
 ]]
 local code_plugins = require('fcz.code_plugins')
+table.insert(plugins, 1, code_plugins.plugins)
 
 --[[
 Plugins setup
 ]]
-table.insert(plugins, 1, code_plugins.plugins)
-table.insert(plugins, 1, themes)
 plugin_manager.setup(plugins)
 code_plugins.init()
+
 vim.cmd.colorscheme 'nordfox' -- default colorscheme

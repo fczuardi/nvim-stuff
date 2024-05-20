@@ -28,6 +28,7 @@ return {
           "bash",
           "markdown",
           "dockerfile",
+          "python",
         },
       },
       config = function(_, opts)
@@ -36,17 +37,11 @@ return {
     },
   },
   init = function()
+    local gitsigns = require('gitsigns')
+    require("fcz.keymaps").gitsigns(gitsigns)
+
     local harpoon = require("harpoon")
     harpoon:setup()
-    vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
-    vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
-    vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end)
-    vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end)
-    vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
-    vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end)
-
-    local gitsigns = require('gitsigns')
-    vim.keymap.set('n', ']c', function() gitsigns.nav_hunk('next') end)
-    vim.keymap.set('n', '[c', function() gitsigns.nav_hunk('prev') end)
+    require("fcz.keymaps").harpoon(harpoon)
   end
 }
